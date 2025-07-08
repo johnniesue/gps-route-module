@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Route Planner</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="gps-nav.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Route Planner</h1>
+    <form id="startForm">
+      <label for="start">Starting Address:</label>
+      <input type="text" id="start" placeholder="Enter starting address" required />
+      <button type="submit">Generate Route</button>
+    </form>
+    <div id="map"></div>
+    <div id="routeInfo"></div>
+    <button id="exportPdf">Export Route to PDF</button>
+  </div>
+</body>
+</html>
